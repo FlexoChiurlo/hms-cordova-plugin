@@ -35,6 +35,7 @@
 	<platform name="android">
 		<dependency id="cordova-plugin-androidx" version="3.0.0" />
 		<hook type="after_plugin_install" src="hooks/after_plugin_install.js" />
+    <hook type="before_plugin_install" src="hooks/before_plugin_install.js" />
 		<hook type="before_plugin_uninstall" src="hooks/before_plugin_uninstall.js" />
 		<config-file target="config.xml" parent="/*">
 			<feature name="HMSPush">
